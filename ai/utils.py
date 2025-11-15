@@ -9,7 +9,7 @@ import io
 import zipfile
 
 
-API_KEY = st.secrets["api_key"]
+API_KEY = st.secrets["API_KEY"]
 genai.configure(api_key=API_KEY)
 
 DEFAULT_MODEL = "gemini-2.5-flash"
