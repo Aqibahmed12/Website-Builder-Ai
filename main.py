@@ -9,8 +9,7 @@ from ai.deploy import GitHubDeployer
 # -------------------------------------------------------
 # 1. Configuration & Page Icon Logic
 # -------------------------------------------------------
-# Check for an image in the 'images' folder to use as the Page Icon
-page_icon = "⚡"  # Default
+page_icon = "⚡"
 if os.path.exists("images"):
     # Find first image file (png, jpg, jpeg, ico, svg)
     valid_exts = [".png", ".jpg", ".jpeg", ".ico", ".svg"]
