@@ -11,7 +11,6 @@ from ai.deploy import GitHubDeployer
 # -------------------------------------------------------
 page_icon = "⚡"
 if os.path.exists("images"):
-    # Find first image file (png, jpg, jpeg, ico, svg)
     valid_exts = [".png", ".jpg", ".jpeg", ".ico", ".svg"]
     for file in os.listdir("images"):
         if any(file.lower().endswith(ext) for ext in valid_exts):
@@ -246,7 +245,6 @@ def render_home():
             "<p style='text-align: center; font-size: 1.1rem; margin-bottom: 30px;'>Enter a prompt, and let our AI write the code for you.</p>",
             unsafe_allow_html=True)
 
-        # Input Card
         st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         st.markdown("### ⌨️ What do you want to build?")
 
