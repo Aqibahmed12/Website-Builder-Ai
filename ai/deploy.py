@@ -4,7 +4,7 @@ import base64
 
 
 class GitHubDeployer:
-    def __init__(self, token=None):
+    def __init__(self, token=None): 
         self.token = token
 
     def token_available(self):
